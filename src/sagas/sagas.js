@@ -4,7 +4,7 @@ import axios from 'axios';
 
 const API_ROOT = 'https://api.openweathermap.org/data/2.5/weather?q=';
 
-const APP_ID = '&units=metric&appid=147e7031bce0ee2dabfe5833e10328a5';
+const APP_ID = '&units=metric&appid=78478b03bbf7e893549bccfc33cf91ac';
 
 export function fetchWeatherApi(location) {
     return axios.get(API_ROOT + location + APP_ID);
