@@ -1,12 +1,12 @@
-import './weather.css';
-import * as React from 'react';
-import 'antd/dist/antd.css';
-import './weather-icons.min.css';
-import './weather-icons-wind.min.css';
-import { useEffect } from 'react';
-import { Spin, Statistic, Card, Row, Col, Divider, Result } from 'antd';
 import { ArrowUpOutlined } from '@ant-design/icons';
+import { Card, Col, Divider, Result, Row, Spin, Statistic } from 'antd';
+import 'antd/dist/antd.css';
 import GoogleMapReact from 'google-map-react';
+import * as React from 'react';
+import { useEffect } from 'react';
+import './weather-icons-wind.min.css';
+import './weather-icons.min.css';
+import './weather.css';
 
 const AnyReactComponent = () => (
     <div>

@@ -1,6 +1,6 @@
+import axios from 'axios';
 import { call, put, takeEvery } from 'redux-saga/effects';
 import * as actions from '../store/actions';
-import axios from 'axios';
 
 const API_ROOT = 'https://api.openweathermap.org/data/2.5/weather?q=';
 

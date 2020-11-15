@@ -1,11 +1,11 @@
+import { Input, Layout } from 'antd';
+import 'antd/dist/antd.css';
+import * as React from 'react';
+import { useEffect } from 'react';
+import { connect, useDispatch } from 'react-redux';
 import './App.css';
 import Weather from './components/weather/weather';
-import 'antd/dist/antd.css';
 import * as actions from './store/actions';
-import { Layout, Input } from 'antd';
-import { useEffect } from 'react';
-import * as React from 'react';
-import { useDispatch, connect } from 'react-redux';
 const { Header, Content, Footer } = Layout;
 
 function App(props) {
