@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+.center {
+    font-family: 'Libre Baskerville';
+    width: 100%;
+    max-width: 830px;
+    margin: 0 auto;
+}
+
+#title {
+    font-size: 32px;
+    font-weight: 400;
+    text-align: center;
+    margin: 12px 15px;
+}
+
+#title .currently {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#title .currently-icon img {
+    width: 100%;
+    height: 100%;
+}
+
+#title .currently .desc.swap {
+    font-weight: 600;
+    text-align: left;
+    position: relative;
+    top: 7px;
+    line-height: 1.3em;
+    margin-bottom: 15px;
+}
+
+#title span {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.currently-icon {
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+}
+
+#title .currently .desc.swap {
+    font-weight: 600;
+    text-align: left;
+}
+
+#title span.summary-high-low {
+    display: flex;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+#title span.summary-high-low span:first-child {
+    margin-left: 0;
+}
+
+.site-statistic-demo-card {
+    padding: 30px;
+}
+
+.ant-statistic-title {
+    color: rgba(0, 0, 0);
+}
+
+.marker {
+    transform: perspective(40px) rotateX(20deg) rotateZ(-45deg);
+    transform-origin: 50% 50%;
+    border-radius: 50% 50% 50% 0;
+    padding: 0 3px 3px 0;
+    width: 30px;
+    height: 30px;
+    background: #2F2F2F;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -2.2em 0 0 -1.3em;
+    -webkit-box-shadow: -1px 1px 4px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: -1px 1px 4px rgba(0, 0, 0, 0.5);
+    box-shadow: -1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.beacon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 3em;
+    width: 3em;
+    border-radius: 50%;
+    -webkit-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+.beacon:before,
+.beacon:after {
+    position: absolute;
+    content: '';
+    height: 3em;
+    width: 3em;
+    left: 0;
+    top: 0;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px #2F2F2F;
+    -webkit-animation: active 2s infinite linear;
+    -moz-animation: active 2s infinite linear;
+    animation: active 2s infinite linear;
+}
+
+.beacon:after {
+    -moz-animation-delay: 1s;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+@-webkit-keyframes active {
+    0% {
+        -webkit-transform: scale(0.1);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: scale(2.5);
+        opacity: 0;
+    }
+}
+
+@keyframes active {
+    0% {
+        transform: scale(0.1);
+        transform: box-shadow(0px 0px 0px 1px #ed1f34);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(2.5);
+        opacity: 0;
+    }
+}
