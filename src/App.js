@@ -19,7 +19,7 @@ function App(props) {
 
     const onPressEnter = (e) => {
         if (last.includes(e.target.value.toLowerCase()) !== true) {
-            if (last.length == 5) {
+            if (last.length === 5) {
                 setLast([...last.slice(1), e.target.value.toLowerCase()]);
             } else {
                 setLast([...last, e.target.value.toLowerCase()]);
